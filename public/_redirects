@@ -1,0 +1,15 @@
+# Netlify redirects for SPA routing
+# This file ensures that all routes are handled by React Router
+# instead of showing 404 errors when users refresh pages
+
+# Redirect all routes to index.html for client-side routing
+/*    /index.html   200
+
+# API routes should not be redirected
+/api/*  200
+
+# Static assets should not be redirected
+/assets/*  200
+/icons/*  200
+/service-worker.js  200
+/manifest.json  200
